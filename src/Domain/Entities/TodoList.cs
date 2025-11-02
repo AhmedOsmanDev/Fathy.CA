@@ -1,8 +1,10 @@
-﻿namespace Fathy.CA.Domain.Entities;
+﻿using System.Collections.Generic;
+
+namespace Fathy.CA.Domain.Entities;
 
 public class TodoList : BaseAuditableEntity
 {
-    public string? Title { get; set; }
+    public string Title { get; set; }
 
     public Colour Colour { get; set; } = Colour.White;
 

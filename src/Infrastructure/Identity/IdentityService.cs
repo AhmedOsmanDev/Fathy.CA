@@ -1,8 +1,8 @@
+using System.Threading.Tasks;
 using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Application.Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 namespace Fathy.CA.Infrastructure.Identity;
 
@@ -22,7 +22,7 @@ public class IdentityService : IIdentityService
         _authorizationService = authorizationService;
     }
 
-    public async Task<string?> GetUserNameAsync(string userId)
+    public async Task<string> GetUserNameAsync(string userId)
     {
         var user = await _userManager.FindByIdAsync(userId);
 

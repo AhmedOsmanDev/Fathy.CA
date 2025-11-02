@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Exceptions;
+﻿using System;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Exceptions;
 using Fathy.CA.Application.TodoLists.Commands.CreateTodoList;
 using Fathy.CA.Application.TodoLists.Commands.UpdateTodoList;
 using Fathy.CA.Domain.Entities;
@@ -12,7 +14,10 @@ public class UpdateTodoListTests : BaseTestFixture
     [Test]
     public async Task ShouldRequireValidTodoListId()
     {
-        var command = new UpdateTodoListCommand { Id = 99, Title = "New Title" };
+        var command = new UpdateTodoListCommand
+        {
+            Id = 99, Title = "New Title"
+        };
         await Should.ThrowAsync<NotFoundException>(() => SendAsync(command));
     }
 
@@ -31,8 +36,7 @@ public class UpdateTodoListTests : BaseTestFixture
 
         var command = new UpdateTodoListCommand
         {
-            Id = listId,
-            Title = "Other List"
+            Id = listId, Title = "Other List"
         };
 
         var ex = await Should.ThrowAsync<ValidationException>(() => SendAsync(command));
@@ -53,8 +57,7 @@ public class UpdateTodoListTests : BaseTestFixture
 
         var command = new UpdateTodoListCommand
         {
-            Id = listId,
-            Title = "Updated List Title"
+            Id = listId, Title = "Updated List Title"
         };
 
         await SendAsync(command);
@@ -62,7 +65,7 @@ public class UpdateTodoListTests : BaseTestFixture
         var list = await FindAsync<TodoList>(listId);
 
         list.ShouldNotBeNull();
-        list!.Title.ShouldBe(command.Title);
+        list.Title.ShouldBe(command.Title);
         list.LastModifiedBy.ShouldNotBeNull();
         list.LastModifiedBy.ShouldBe(userId);
         list.LastModified.ShouldBe(DateTime.Now, TimeSpan.FromMilliseconds(10000));

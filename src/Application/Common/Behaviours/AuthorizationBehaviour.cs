@@ -1,11 +1,15 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Linq;
+using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 using Fathy.CA.Application.Common.Exceptions;
 using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Application.Common.Security;
 
 namespace Fathy.CA.Application.Common.Behaviours;
 
-public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> 
+public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : notnull
 {
     private readonly IUser _user;
@@ -19,7 +23,8 @@ public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRe
         _identityService = identityService;
     }
 
-    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
         var authorizeAttributes = request.GetType().GetCustomAttributes<AuthorizeAttribute>();
 
@@ -40,14 +45,9 @@ public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRe
 
                 foreach (var roles in authorizeAttributesWithRoles.Select(a => a.Roles.Split(',')))
                 {
-                    foreach (var role in roles)
+                    if (roles.Select(role => _user.Roles?.Any(x => role == x) ?? false).Any())
                     {
-                        var isInRole = _user.Roles?.Any(x => role == x)??false;
-                        if (isInRole)
-                        {
-                            authorized = true;
-                            break;
-                        }
+                        authorized = true;
                     }
                 }
 

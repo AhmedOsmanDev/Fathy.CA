@@ -1,4 +1,5 @@
-﻿using Fathy.CA.Application.Common.Exceptions;
+﻿using System.Collections.Generic;
+using Fathy.CA.Application.Common.Exceptions;
 using FluentValidation.Results;
 using NUnit.Framework;
 using Shouldly;

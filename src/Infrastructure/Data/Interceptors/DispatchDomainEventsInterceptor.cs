@@ -1,4 +1,7 @@
-﻿using Fathy.CA.Domain.Common;
+﻿using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Domain.Common;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -29,7 +32,7 @@ public class DispatchDomainEventsInterceptor : SaveChangesInterceptor
         return await base.SavingChangesAsync(eventData, result, cancellationToken);
     }
 
-    public async Task DispatchDomainEvents(DbContext? context)
+    public async Task DispatchDomainEvents(DbContext context)
     {
         if (context == null) return;
 

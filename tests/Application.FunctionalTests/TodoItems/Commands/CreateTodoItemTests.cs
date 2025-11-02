@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Exceptions;
+﻿using System;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Exceptions;
 using Fathy.CA.Application.TodoItems.Commands.CreateTodoItem;
 using Fathy.CA.Application.TodoLists.Commands.CreateTodoList;
 using Fathy.CA.Domain.Entities;
@@ -38,7 +40,7 @@ public class CreateTodoItemTests : BaseTestFixture
         var item = await FindAsync<TodoItem>(itemId);
 
         item.ShouldNotBeNull();
-        item!.ListId.ShouldBe(command.ListId);
+        item.ListId.ShouldBe(command.ListId);
         item.Title.ShouldBe(command.Title);
         item.CreatedBy.ShouldBe(userId);
         item.Created.ShouldBe(DateTime.Now, TimeSpan.FromMilliseconds(10000));

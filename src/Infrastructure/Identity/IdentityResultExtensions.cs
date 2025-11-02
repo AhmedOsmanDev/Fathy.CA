@@ -1,4 +1,5 @@
-﻿using Fathy.CA.Application.Common.Models;
+﻿using System.Linq;
+using Fathy.CA.Application.Common.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace Fathy.CA.Infrastructure.Identity;

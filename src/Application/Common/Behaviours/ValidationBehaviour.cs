@@ -1,4 +1,8 @@
-﻿using ValidationException = Fathy.CA.Application.Common.Exceptions.ValidationException;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using ValidationException = Fathy.CA.Application.Common.Exceptions.ValidationException;
 
 namespace Fathy.CA.Application.Common.Behaviours;
 
@@ -21,7 +25,7 @@ public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TReque
                     v.ValidateAsync(new ValidationContext<TRequest>(request), cancellationToken)));
 
             var failures = validationResults
-                .Where(r => r.Errors.Any())
+                .Where(r => r.Errors.Count != 0)
                 .SelectMany(r => r.Errors)
                 .ToList();
 

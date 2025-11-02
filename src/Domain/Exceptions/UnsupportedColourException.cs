@@ -1,4 +1,6 @@
-﻿namespace Fathy.CA.Domain.Exceptions;
+﻿using System;
+
+namespace Fathy.CA.Domain.Exceptions;
 
 public class UnsupportedColourException : Exception
 {

@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Domain.Entities;
 using Fathy.CA.Domain.Events;
 
@@ -8,7 +10,7 @@ public record CreateTodoItemCommand : IRequest<int>
 {
     public int ListId { get; init; }
 
-    public string? Title { get; init; }
+    public string Title { get; init; }
 }
 
 public class CreateTodoItemCommandHandler : IRequestHandler<CreateTodoItemCommand, int>

@@ -1,11 +1,14 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System;
+using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Domain.Constants;
 using Fathy.CA.Infrastructure.Data;
 using Fathy.CA.Infrastructure.Data.Interceptors;
 using Fathy.CA.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 

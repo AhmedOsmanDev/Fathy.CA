@@ -9,7 +9,153 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2b7a87-6b77-404c-991b-8be96b04063e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/azure-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fathy.CA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fathy.CA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Build.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Directory.Packages.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fathy.CA.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Fathy.CA.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.cake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/abbreviations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/ai/cognitiveservices.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/ai/hub-dependencies.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/ai/hub.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/ai/project.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/config/configstore.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/cosmos-account.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/mongo/cosmos-mongo-account.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/mongo/cosmos-mongo-db.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/sql/cosmos-sql-account.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/sql/cosmos-sql-db.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/sql/cosmos-sql-role-assign.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/cosmos/sql/cosmos-sql-role-def.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/mysql/flexibleserver.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/postgresql/flexibleserver.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/database/sqlserver/sqlserver.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/gateway/apim.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/ai-environment.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/aks-agent-pool.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/aks-managed-cluster.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/aks.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/appservice-appsettings.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/appservice.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/appserviceplan.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/container-app-upsert.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/container-app.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/container-apps-environment.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/container-apps.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/container-registry.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/functions.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/host/staticwebapp.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/monitor/applicationinsights-dashboard.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/monitor/applicationinsights.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/monitor/loganalytics.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/monitor/monitoring.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/networking/cdn-endpoint.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/networking/cdn-profile.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/networking/cdn.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/search/search-services.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/aks-managed-cluster-access.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/configstore-access.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/keyvault-access.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/keyvault-secret.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/keyvault.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/registry-access.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/security/role.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/storage/storage-account.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/core/testing/loadtesting.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/main.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/main.parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/services/web.bicep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/AuthorizationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/AuthorizationBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/LoggingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/LoggingBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/PerformanceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/PerformanceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Behaviours/ValidationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Behaviours/ValidationBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Exceptions/ForbiddenAccessException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Exceptions/ForbiddenAccessException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Exceptions/ValidationException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Exceptions/ValidationException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IIdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IIdentityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mappings/MappingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Mappings/MappingExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/LookupDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Models/LookupDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/PaginatedList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Models/PaginatedList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Models/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Security/AuthorizeAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Security/AuthorizeAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/DeleteTodoItem/DeleteTodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Commands/DeleteTodoItem/DeleteTodoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItemDetail/UpdateTodoItemDetail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Commands/UpdateTodoItemDetail/UpdateTodoItemDetail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCompletedEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCompletedEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCreatedEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/EventHandlers/TodoItemCreatedEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPagination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/GetTodoItemsWithPagination.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/TodoItemBriefDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoItems/Queries/GetTodoItemsWithPagination/TodoItemBriefDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/DeleteTodoList/DeleteTodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/DeleteTodoList/DeleteTodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/PurgeTodoLists/PurgeTodoLists.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/PurgeTodoLists/PurgeTodoLists.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/GetTodos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/GetTodos.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoItemDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoItemDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoListDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodoListDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodosVm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/TodoLists/Queries/GetTodos/TodosVm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/GetWeatherForecastsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/GetWeatherForecastsQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/WeatherForecasts/Queries/GetWeatherForecasts/WeatherForecast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Common/BaseAuditableEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Common/BaseAuditableEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Common/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Common/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Common/ValueObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Common/ValueObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/TodoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/TodoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/TodoList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/TodoList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Exceptions/UnsupportedColourException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Exceptions/UnsupportedColourException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/ValueObjects/Colour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/ValueObjects/Colour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContextInitialiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/ApplicationDbContextInitialiser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/AuditableEntityInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/AuditableEntityInterceptor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data/Interceptors/DispatchDomainEventsInterceptor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/ApplicationUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/IdentityResultExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/IdentityResultExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/IdentityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/TodoItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Endpoints/TodoItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/TodoLists.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Endpoints/TodoLists.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Endpoints/Users.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Endpoints/WeatherForecasts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Endpoints/WeatherForecasts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/GlobalUsings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Infrastructure/CustomExceptionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Infrastructure/CustomExceptionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Infrastructure/EndpointGroupBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Infrastructure/EndpointGroupBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Infrastructure/IEndpointRouteBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Infrastructure/IEndpointRouteBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Infrastructure/MethodInfoExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Infrastructure/MethodInfoExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Infrastructure/WebApplicationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Infrastructure/WebApplicationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Services/CurrentUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Services/CurrentUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Web/wwwroot/api/specification.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Web/wwwroot/api/specification.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/Application.FunctionalTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/Application.FunctionalTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/BaseTestFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/BaseTestFixture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/CustomWebApplicationFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/CustomWebApplicationFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/ITestDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/ITestDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/SqlTestDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/SqlTestDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/SqlTestcontainersTestDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/SqlTestcontainersTestDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TestDatabaseFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TestDatabaseFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/Testing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/Testing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/CreateTodoItemTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/CreateTodoItemTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/DeleteTodoItemTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/DeleteTodoItemTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/UpdateTodoItemTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoItems/Commands/UpdateTodoItemTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/CreateTodoListTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/CreateTodoListTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/DeleteTodoListTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/DeleteTodoListTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/PurgeTodoListsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/PurgeTodoListsTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/UpdateTodoListTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Commands/UpdateTodoListTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Queries/GetTodosTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.FunctionalTests/TodoLists/Queries/GetTodosTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/Application.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/Application.UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Behaviours/RequestLoggerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Behaviours/RequestLoggerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Exceptions/ValidationExceptionTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Exceptions/ValidationExceptionTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Mappings/MappingTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/Common/Mappings/MappingTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Domain.UnitTests/Domain.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Domain.UnitTests/Domain.UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Infrastructure.IntegrationTests/Infrastructure.IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Infrastructure.IntegrationTests/Infrastructure.IntegrationTests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +165,20 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/tests/Infrastructure.IntegrationTests/Infrastructure.IntegrationTests.csproj" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="34tH0RkTBSFhqof6znB92LxMkwH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,6 +189,7 @@
     ".NET Launch Settings Profile.Web: Fathy.CA.Web.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.61174786",
     "git-widget-placeholder": "master",
@@ -45,6 +199,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,13 +244,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762025727217</updated>
-      <workItem from="1762025730584" duration="645000" />
+      <workItem from="1762025730584" duration="8941000" />
+      <workItem from="1762086889684" duration="1452000" />
+      <workItem from="1762088428275" duration="673000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -117,5 +275,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

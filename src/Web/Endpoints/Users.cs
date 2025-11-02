@@ -1,4 +1,7 @@
 ﻿using Fathy.CA.Infrastructure.Identity;
+using Fathy.CA.Web.Infrastructure;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
 
 namespace Fathy.CA.Web.Endpoints;
 

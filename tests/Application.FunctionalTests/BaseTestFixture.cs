@@ -1,4 +1,6 @@
-﻿namespace Fathy.CA.Application.FunctionalTests;
+﻿using System.Threading.Tasks;
+
+namespace Fathy.CA.Application.FunctionalTests;
 
 using static Testing;
 

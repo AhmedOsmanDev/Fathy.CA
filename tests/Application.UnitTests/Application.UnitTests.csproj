@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>Fathy.CA.Application.UnitTests</RootNamespace>
-        <AssemblyName>Fathy.CA.Application.UnitTests</AssemblyName>
+      <RootNamespace>Fathy.CA.Application.UnitTests</RootNamespace>
+      <AssemblyName>Fathy.CA.Application.UnitTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

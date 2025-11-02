@@ -1,11 +1,13 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Domain.Entities;
 
 namespace Fathy.CA.Application.TodoLists.Commands.CreateTodoList;
 
 public record CreateTodoListCommand : IRequest<int>
 {
-    public string? Title { get; init; }
+    public string Title { get; init; }
 }
 
 public class CreateTodoListCommandHandler : IRequestHandler<CreateTodoListCommand, int>

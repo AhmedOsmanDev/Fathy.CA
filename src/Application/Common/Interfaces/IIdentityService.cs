@@ -1,10 +1,11 @@
-﻿using Fathy.CA.Application.Common.Models;
+﻿using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Models;
 
 namespace Fathy.CA.Application.Common.Interfaces;
 
 public interface IIdentityService
 {
-    Task<string?> GetUserNameAsync(string userId);
+    Task<string> GetUserNameAsync(string userId);
 
     Task<bool> IsInRoleAsync(string userId, string role);
 

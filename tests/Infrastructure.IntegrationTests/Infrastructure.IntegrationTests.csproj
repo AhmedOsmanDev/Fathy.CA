@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>Fathy.CA.Infrastructure.IntegrationTests</RootNamespace>
-        <AssemblyName>Fathy.CA.Infrastructure.IntegrationTests</AssemblyName>
+      <RootNamespace>Fathy.CA.Infrastructure.IntegrationTests</RootNamespace>
+      <AssemblyName>Fathy.CA.Infrastructure.IntegrationTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,6 +17,10 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageVersion Update="NUnit" Version="4.4.0" />
     </ItemGroup>
 
 </Project>

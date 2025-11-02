@@ -1,4 +1,8 @@
-﻿using Fathy.CA.Domain.Constants;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Fathy.CA.Domain.Constants;
 using Fathy.CA.Infrastructure.Data;
 using Fathy.CA.Infrastructure.Identity;
 using MediatR;
@@ -14,8 +18,8 @@ public partial class Testing
     private static ITestDatabase _database = null!;
     private static CustomWebApplicationFactory _factory = null!;
     private static IServiceScopeFactory _scopeFactory = null!;
-    private static string? _userId;
-    private static List<string>? _roles;
+    private static string _userId;
+    private static List<string> _roles;
     [OneTimeSetUp]
     public async Task RunBeforeAnyTests()
     {
@@ -44,12 +48,12 @@ public partial class Testing
         await mediator.Send(request);
     }
 
-    public static string? GetUserId()
+    public static string GetUserId()
     {
         return _userId;
     }
     
-    public static List<string>? GetRoles()
+    public static List<string> GetRoles()
     {
         return _roles;
     }
@@ -111,7 +115,7 @@ public partial class Testing
         _userId = null;
     }
 
-    public static async Task<TEntity?> FindAsync<TEntity>(params object[] keyValues)
+    public static async Task<TEntity> FindAsync<TEntity>(params object[] keyValues)
         where TEntity : class
     {
         using var scope = _scopeFactory.CreateScope();

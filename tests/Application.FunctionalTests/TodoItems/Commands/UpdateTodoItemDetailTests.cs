@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.TodoItems.Commands.CreateTodoItem;
+﻿using System;
+using System.Threading.Tasks;
+using Fathy.CA.Application.TodoItems.Commands.CreateTodoItem;
 using Fathy.CA.Application.TodoItems.Commands.UpdateTodoItem;
 using Fathy.CA.Application.TodoItems.Commands.UpdateTodoItemDetail;
 using Fathy.CA.Application.TodoLists.Commands.CreateTodoList;
@@ -48,7 +50,7 @@ public class UpdateTodoItemDetailTests : BaseTestFixture
         var item = await FindAsync<TodoItem>(itemId);
 
         item.ShouldNotBeNull();
-        item!.ListId.ShouldBe(command.ListId);
+        item.ListId.ShouldBe(command.ListId);
         item.Note.ShouldBe(command.Note);
         item.Priority.ShouldBe(command.Priority);
         item.LastModifiedBy.ShouldNotBeNull();

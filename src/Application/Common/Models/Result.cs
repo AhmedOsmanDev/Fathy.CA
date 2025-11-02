@@ -1,4 +1,8 @@
-﻿namespace Fathy.CA.Application.Common.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Fathy.CA.Application.Common.Models;
 
 public class Result
 {

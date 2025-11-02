@@ -1,8 +1,13 @@
-﻿using Azure.Identity;
+﻿using System;
+using System.Linq;
+using Azure.Identity;
 using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Infrastructure.Data;
+using Fathy.CA.Web.Infrastructure;
 using Fathy.CA.Web.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 using NSwag;
 using NSwag.Generation.Processors.Security;

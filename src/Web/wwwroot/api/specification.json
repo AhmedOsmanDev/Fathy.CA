@@ -76,7 +76,6 @@
               }
             }
           },
-          "required": true,
           "x-position": 1
         },
         "responses": {
@@ -126,7 +125,6 @@
               }
             }
           },
-          "required": true,
           "x-position": 2
         },
         "responses": {
@@ -199,7 +197,6 @@
               }
             }
           },
-          "required": true,
           "x-position": 2
         },
         "responses": {
@@ -255,7 +252,6 @@
               }
             }
           },
-          "required": true,
           "x-position": 1
         },
         "responses": {
@@ -305,7 +301,6 @@
               }
             }
           },
-          "required": true,
           "x-position": 2
         },
         "responses": {
@@ -782,6 +777,7 @@
         "properties": {
           "items": {
             "type": "array",
+            "nullable": true,
             "items": {
               "$ref": "#/components/schemas/TodoItemBriefDto"
             }
@@ -901,12 +897,14 @@
         "properties": {
           "priorityLevels": {
             "type": "array",
+            "nullable": true,
             "items": {
               "$ref": "#/components/schemas/LookupDto"
             }
           },
           "lists": {
             "type": "array",
+            "nullable": true,
             "items": {
               "$ref": "#/components/schemas/TodoListDto"
             }
@@ -945,6 +943,7 @@
           },
           "items": {
             "type": "array",
+            "nullable": true,
             "items": {
               "$ref": "#/components/schemas/TodoItemDto"
             }
@@ -1246,7 +1245,8 @@
             "format": "int32"
           },
           "summary": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         }
       }

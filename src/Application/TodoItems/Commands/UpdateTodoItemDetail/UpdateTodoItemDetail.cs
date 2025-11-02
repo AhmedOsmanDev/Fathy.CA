@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Domain.Enums;
 
 namespace Fathy.CA.Application.TodoItems.Commands.UpdateTodoItemDetail;
@@ -11,7 +13,7 @@ public record UpdateTodoItemDetailCommand : IRequest
 
     public PriorityLevel Priority { get; init; }
 
-    public string? Note { get; init; }
+    public string Note { get; init; }
 }
 
 public class UpdateTodoItemDetailCommandHandler : IRequestHandler<UpdateTodoItemDetailCommand>

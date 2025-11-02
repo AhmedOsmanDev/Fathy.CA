@@ -1,4 +1,9 @@
 using Fathy.CA.Infrastructure.Data;
+using Fathy.CA.Web.Infrastructure;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,5 +44,3 @@ app.Map("/", () => Results.Redirect("/api"));
 app.MapEndpoints();
 
 app.Run();
-
-public partial class Program { }

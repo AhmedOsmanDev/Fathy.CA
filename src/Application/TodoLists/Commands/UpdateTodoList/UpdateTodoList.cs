@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 
 namespace Fathy.CA.Application.TodoLists.Commands.UpdateTodoList;
 
@@ -6,7 +8,7 @@ public record UpdateTodoListCommand : IRequest
 {
     public int Id { get; init; }
 
-    public string? Title { get; init; }
+    public string Title { get; init; }
 }
 
 public class UpdateTodoListCommandHandler : IRequestHandler<UpdateTodoListCommand>

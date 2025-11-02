@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 
 namespace Fathy.CA.Application.TodoItems.Commands.UpdateTodoItem;
 
@@ -6,7 +8,7 @@ public record UpdateTodoItemCommand : IRequest
 {
     public int Id { get; init; }
 
-    public string? Title { get; init; }
+    public string Title { get; init; }
 
     public bool Done { get; init; }
 }

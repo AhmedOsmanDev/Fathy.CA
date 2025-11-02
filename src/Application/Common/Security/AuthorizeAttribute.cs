@@ -1,4 +1,6 @@
-﻿namespace Fathy.CA.Application.Common.Security;
+﻿using System;
+
+namespace Fathy.CA.Application.Common.Security;
 
 /// <summary>
 /// Specifies the class this attribute is applied to requires authorization.

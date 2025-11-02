@@ -1,4 +1,8 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -33,7 +37,7 @@ public class AuditableEntityInterceptor : SaveChangesInterceptor
         return base.SavingChangesAsync(eventData, result, cancellationToken);
     }
 
-    public void UpdateEntities(DbContext? context)
+    public void UpdateEntities(DbContext context)
     {
         if (context == null) return;
 

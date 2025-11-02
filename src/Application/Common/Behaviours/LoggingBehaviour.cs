@@ -1,4 +1,6 @@
-﻿using Fathy.CA.Application.Common.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Fathy.CA.Application.Common.Interfaces;
 using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
 
@@ -22,7 +24,7 @@ public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest>
     {
         var requestName = typeof(TRequest).Name;
         var userId = _user.Id ?? string.Empty;
-        string? userName = string.Empty;
+        string userName = string.Empty;
 
         if (!string.IsNullOrEmpty(userId))
         {

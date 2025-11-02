@@ -1,4 +1,6 @@
-﻿namespace Fathy.CA.Application.WeatherForecasts.Queries.GetWeatherForecasts;
+﻿using System;
+
+namespace Fathy.CA.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
 public class WeatherForecast
 {

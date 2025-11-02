@@ -1,8 +1,12 @@
-﻿using Fathy.CA.Domain.Constants;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Fathy.CA.Domain.Constants;
 using Fathy.CA.Domain.Entities;
 using Fathy.CA.Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
