@@ -8,7 +8,6 @@ using Fathy.CA.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-
 using NSwag;
 using NSwag.Generation.Processors.Security;
 
@@ -27,7 +26,6 @@ public static class DependencyInjection
             .AddDbContextCheck<ApplicationDbContext>();
 
         builder.Services.AddExceptionHandler<CustomExceptionHandler>();
-
 
         // Customise default API behaviour
         builder.Services.Configure<ApiBehaviorOptions>(options =>
