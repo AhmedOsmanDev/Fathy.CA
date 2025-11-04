@@ -2,7 +2,10 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Fathy.CA.Application.Common.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fathy.CA.Application.Common.Mappings;
 

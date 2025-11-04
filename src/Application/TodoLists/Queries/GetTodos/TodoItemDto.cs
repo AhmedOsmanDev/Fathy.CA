@@ -1,4 +1,5 @@
-﻿using Fathy.CA.Domain.Entities;
+﻿using AutoMapper;
+using Fathy.CA.Domain.Entities;
 
 namespace Fathy.CA.Application.TodoLists.Queries.GetTodos;
 
@@ -20,7 +21,7 @@ public class TodoItemDto
     {
         public Mapping()
         {
-            CreateMap<TodoItem, TodoItemDto>().ForMember(d => d.Priority, 
+            CreateMap<TodoItem, TodoItemDto>().ForMember(d => d.Priority,
                 opt => opt.MapFrom(s => (int)s.Priority));
         }
     }

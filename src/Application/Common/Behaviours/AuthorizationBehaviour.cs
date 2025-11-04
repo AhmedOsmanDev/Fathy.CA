@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Fathy.CA.Application.Common.Exceptions;
 using Fathy.CA.Application.Common.Interfaces;
 using Fathy.CA.Application.Common.Security;
+using MediatR;
 
 namespace Fathy.CA.Application.Common.Behaviours;
 

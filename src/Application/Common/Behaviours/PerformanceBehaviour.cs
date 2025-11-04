@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Fathy.CA.Application.Common.Interfaces;
+using MediatR;
 using Microsoft.Extensions.Logging;
 
 namespace Fathy.CA.Application.Common.Behaviours;

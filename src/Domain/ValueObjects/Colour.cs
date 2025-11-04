@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Fathy.CA.Domain.Common;
+using Fathy.CA.Domain.Exceptions;
 
 namespace Fathy.CA.Domain.ValueObjects;
 
@@ -33,7 +35,7 @@ public class Colour(string code) : ValueObject
 
     public static Colour Grey => new("#999999");
 
-    public string Code { get; private set; } = string.IsNullOrWhiteSpace(code)?"#000000":code;
+    public string Code { get; private set; } = string.IsNullOrWhiteSpace(code) ? "#000000" : code;
 
     public static implicit operator string(Colour colour)
     {

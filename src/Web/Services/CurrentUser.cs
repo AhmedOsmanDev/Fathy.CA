@@ -7,16 +7,9 @@ using Microsoft.AspNetCore.Http;
 
 namespace Fathy.CA.Web.Services;
 
-public class CurrentUser : IUser
+public class CurrentUser(IHttpContextAccessor httpContextAccessor) : IUser
 {
-    private readonly IHttpContextAccessor _httpContextAccessor;
+    public string Id => httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
 
-    public CurrentUser(IHttpContextAccessor httpContextAccessor)
-    {
-        _httpContextAccessor = httpContextAccessor;
-    }
-
-    public string Id => _httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
-    public List<string> Roles => _httpContextAccessor.HttpContext?.User?.FindAll(ClaimTypes.Role).Select(x => x.Value).ToList();
-
+    public List<string> Roles => httpContextAccessor.HttpContext?.User?.FindAll(ClaimTypes.Role).Select(x => x.Value).ToList();
 }

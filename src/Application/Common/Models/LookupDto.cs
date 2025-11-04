@@ -1,4 +1,5 @@
-﻿using Fathy.CA.Domain.Entities;
+﻿using AutoMapper;
+using Fathy.CA.Domain.Entities;
 
 namespace Fathy.CA.Application.Common.Models;
 

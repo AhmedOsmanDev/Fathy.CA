@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using Fathy.CA.Domain.Common;
+using Fathy.CA.Domain.ValueObjects;
 
 namespace Fathy.CA.Domain.Entities;
 

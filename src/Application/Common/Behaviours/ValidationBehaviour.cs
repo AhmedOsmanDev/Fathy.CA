@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using FluentValidation;
+using MediatR;
 using ValidationException = Fathy.CA.Application.Common.Exceptions.ValidationException;
 
 namespace Fathy.CA.Application.Common.Behaviours;

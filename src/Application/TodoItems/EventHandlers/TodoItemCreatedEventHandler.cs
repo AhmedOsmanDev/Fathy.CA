@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Fathy.CA.Domain.Events;
+using MediatR;
 using Microsoft.Extensions.Logging;
 
 namespace Fathy.CA.Application.TodoItems.EventHandlers;

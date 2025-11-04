@@ -1,4 +1,7 @@
 ﻿using System;
+using Fathy.CA.Domain.Common;
+using Fathy.CA.Domain.Enums;
+using Fathy.CA.Domain.Events;
 
 namespace Fathy.CA.Domain.Entities;
 

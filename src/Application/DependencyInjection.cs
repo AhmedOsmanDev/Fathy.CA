@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using Fathy.CA.Application.Common.Behaviours;
+using FluentValidation;
 using Microsoft.Extensions.Hosting;
 
 namespace Microsoft.Extensions.DependencyInjection;
