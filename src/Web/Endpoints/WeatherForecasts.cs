@@ -25,5 +25,4 @@ public class WeatherForecasts : EndpointGroupBase
 
         return TypedResults.Ok(forecasts);
     }
-
 }
