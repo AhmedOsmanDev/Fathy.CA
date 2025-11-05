@@ -7,9 +7,9 @@ namespace Fathy.CA.Web.Endpoints;
 
 public class Users : EndpointGroupBase
 {
-    public override void Map(RouteGroupBuilder app)
+    public override void Map(RouteGroupBuilder groupBuilder)
     {
-        app.MapGroup(string.Empty)
+        groupBuilder.MapGroup(string.Empty)
             .MapIdentityApi<ApplicationUser>();
     }
 }
