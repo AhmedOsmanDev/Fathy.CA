@@ -9,6 +9,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using NUnit.Framework;
 
 namespace Fathy.CA.Application.FunctionalTests;
 
@@ -52,7 +53,7 @@ public partial class Testing
     {
         return _userId;
     }
-    
+
     public static List<string> GetRoles()
     {
         return _roles;
@@ -108,7 +109,7 @@ public partial class Testing
         {
             await _database.ResetAsync();
         }
-        catch (Exception) 
+        catch (Exception)
         {
         }
 

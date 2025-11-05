@@ -8,8 +8,15 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace Fathy.CA.Infrastructure.Data.Interceptors;
 
-public class DispatchDomainEventsInterceptor(IMediator mediator) : SaveChangesInterceptor
+public class DispatchDomainEventsInterceptor : SaveChangesInterceptor
 {
+    private readonly IMediator _mediator;
+
+    public DispatchDomainEventsInterceptor(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {
         DispatchDomainEvents(eventData.Context).GetAwaiter().GetResult();
@@ -40,6 +47,6 @@ public class DispatchDomainEventsInterceptor(IMediator mediator) : SaveChangesIn
         entities.ToList().ForEach(e => e.ClearDomainEvents());
 
         foreach (var domainEvent in domainEvents)
-            await mediator.Publish(domainEvent);
+            await _mediator.Publish(domainEvent);
     }
 }

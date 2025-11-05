@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace Fathy.CA.Application.FunctionalTests;
 
